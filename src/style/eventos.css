@@ -1,0 +1,56 @@
+.main-eventos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  border: 2px solid white;
+  margin-top: 75px;
+  padding: 40px 0 0 0;
+}
+
+.main-eventos .main-eventos__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 80%;
+  height: auto;
+  background: #1b1b1b;
+  padding: 10px 20px;
+  box-shadow: 0 0 20px 0 black;
+}
+
+.main-eventos__content .eventos_txt {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  gap: 10px;
+  text-transform: uppercase;
+}
+
+.eventos_txt span {
+  font-size: 25px;
+}
+
+/* =============== */
+
+/* ======== IMAGENS ========*/
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 15px;
+  width: 100%;
+  height: auto;
+  background-color: #2a2a2ade;
+  overflow: hidden;
+  border: 2px solid white;
+}
+
+.content img {
+  width: 100%;
+}
