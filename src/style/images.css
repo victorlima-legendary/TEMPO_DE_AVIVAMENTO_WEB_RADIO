@@ -41,3 +41,31 @@
 /* =============== */
 
 /* ======== IMAGENS ========*/
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  border: 2px solid white;
+  padding: 15px;
+}
+
+.content a {
+  margin-top: 15px;
+  padding: 10px 20px;
+  border-radius: 15px;
+  border: 1px solid white;
+  background-color: rgb(143, 49, 49);
+}
+
+#imgContainer {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  width: 100%;
+  height: auto;
+  flex-direction: column;
+}
