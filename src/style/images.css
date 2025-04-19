@@ -51,6 +51,7 @@
   height: auto;
   border: 2px solid white;
   padding: 15px;
+  overflow: hidden;
 }
 
 .content a {
@@ -66,6 +67,14 @@
   justify-content: center;
   align-items: start;
   width: 100%;
+  gap: 20px;
   height: auto;
   flex-direction: column;
+}
+
+.imagens img {
+  width: 100%;
+  height: auto;
+  padding-bottom: 20px;
+  border-bottom: 2px solid gray;
 }
