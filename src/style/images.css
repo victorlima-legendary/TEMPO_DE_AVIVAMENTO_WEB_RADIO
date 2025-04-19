@@ -1,0 +1,43 @@
+/* ============================= */
+
+.main-imagens {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  height: 100dvh;
+  border: 2px solid white;
+  margin-top: 78px;
+  padding: 40px 0 0 0;
+}
+
+.main-imagens .main-imagens__content {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  width: 80%;
+  height: auto;
+  background: #1b1b1b;
+  padding: 10px 20px;
+  box-shadow: 0 0 20px 0 black;
+  margin-bottom: 50px;
+}
+
+.main-imagens__content .imagens_txt {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  border: 2px solid white;
+  width: 100%;
+  text-transform: uppercase;
+  gap: 10px;
+}
+
+.imagens_txt span {
+  font-size: 25px;
+}
+
+/* =============== */
+
+/* ======== IMAGENS ========*/
