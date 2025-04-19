@@ -17,7 +17,7 @@
   align-items: center;
   flex-direction: column;
   width: 80%;
-  height: 100%;
+  height: auto;
   background: #1b1b1b;
   padding: 10px 20px;
   box-shadow: 0 0 20px 0 black;
