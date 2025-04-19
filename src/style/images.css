@@ -28,7 +28,6 @@
   display: flex;
   align-items: center;
   justify-content: start;
-  border: 2px solid white;
   width: 100%;
   text-transform: uppercase;
   gap: 10px;
@@ -49,7 +48,6 @@
   flex-direction: column;
   width: 100%;
   height: auto;
-  border: 2px solid white;
   padding: 15px;
   overflow: hidden;
 }
@@ -73,8 +71,12 @@
 }
 
 .imagens img {
+  border-radius: 10px;
   width: 100%;
   height: auto;
+}
+
+.linha {
   padding-bottom: 20px;
   border-bottom: 2px solid gray;
 }
