@@ -1,11 +1,15 @@
+/* ==== CONTEÚDO ==== */
 .page-content {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: 100%;
-  border: 2px solid red;
 }
+
+/* ======================= */
+
+/* ===== MAIN ===== */
 
 main {
   display: flex;
@@ -14,7 +18,7 @@ main {
   flex-direction: column;
   width: 90%;
   height: 100%;
-  border: 2px solid yellow;
+
   padding: 10px 0;
 }
 
@@ -23,7 +27,7 @@ main {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  border: 2px solid blue;
+
   flex-wrap: wrap;
   overflow: hidden;
 }
@@ -45,7 +49,31 @@ main {
   justify-content: center;
   width: 50%;
   min-height: 100px;
-  border: 2px solid white;
+}
+
+.pedido a,
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background: transparent;
+  padding: 4px;
+  font-weight: 700;
+}
+
+.pedido a {
+  border: 1px solid rgba(255, 255, 255, 0.372);
+  border-radius: 13px;
+}
+
+.pedido button {
+  border: 1px solid rgba(255, 255, 255, 0.541);
+  padding: 10px 30px;
+}
+
+.pedido button {
+  color: rgba(255, 255, 255, 0.788);
 }
 
 .palavra {
@@ -67,3 +95,5 @@ main {
   box-shadow: inset 0 0px 20px rgb(0, 0, 0), inset 0 0px 20px rgba(0, 0, 0, 0.6),
     inset 0px 0 20px rgba(0, 0, 0, 0.05), inset 0px 0 20px rgba(0, 0, 0, 0.4);
 }
+
+/* =========================== */
