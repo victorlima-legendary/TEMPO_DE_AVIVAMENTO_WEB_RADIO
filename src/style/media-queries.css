@@ -64,6 +64,7 @@
   .main__palavra-do-dia {
     flex-wrap: nowrap;
   }
+
   .palavra {
     width: 700px;
     height: 90px;
@@ -102,6 +103,7 @@
 
   .main__palavra-do-dia {
     margin-top: 0;
+    flex-direction: column;
   }
 
   .pedido {
