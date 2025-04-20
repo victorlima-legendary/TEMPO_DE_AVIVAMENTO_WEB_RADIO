@@ -100,6 +100,10 @@
     width: 90%;
   }
 
+  .main__palavra-do-dia {
+    margin-top: 0;
+  }
+
   .pedido {
     border: none;
     margin: 0;
