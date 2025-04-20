@@ -14,6 +14,7 @@
     />
     <link rel="stylesheet" href="./src/style/reset.css" />
     <link rel="stylesheet" href="./src/style/style.css" />
+    <link rel="stylesheet" href="./src/style/slider.css" />
     <link rel="stylesheet" href="./src/style/vars.css" />
     <link rel="stylesheet" href="./src/style/slide.css" />
     <link rel="stylesheet" href="./src/style/dropdown_mobile.css" />
@@ -34,7 +35,23 @@
       <!--  -->
       <div id="header"></div>
       <!-- IMAGEM -->
-      <div class="page-slider"></div>
+      <div class="page-slider">
+        <!--  -->
+        <picture>
+          <source
+            media="(max-width: 550px)"
+            srcset="./src/assets/slide_mobile.jpeg"
+          />
+          <!--  -->
+          <img
+            width="100%"
+            height="auto"
+            src="./src/assets/slide.webp"
+            alt="Banner Rádio"
+          />
+        </picture>
+        <!--  -->
+      </div>
       <div class="page-content">
         <!-- MAIN CONTENT -->
         <main></main>

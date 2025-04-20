@@ -34,38 +34,4 @@ html {
   background-color: var(--bg-color);
 }
 
-.page-background .page-slider {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 75px;
-  overflow: hidden;
-  width: 100%;
-  height: 50%;
-  /*   border: 2px solid white; */
-}
-
-.page-slider::before {
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  mask-image: linear-gradient(
-    to bottom,
-    black 30%,
-    black 20%,
-    black 20%,
-    black 20%,
-    transparent 90%
-  );
-  background-image: url("../assets/slide.webp");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-clip: border-box;
-}
-
 /* ============================== */

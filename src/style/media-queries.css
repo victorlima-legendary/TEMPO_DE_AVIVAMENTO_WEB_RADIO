@@ -54,10 +54,6 @@
     width: 98%;
   }
 
-  .page-slider::before {
-    background-image: url("../assets/main_banner_mobile.jpeg");
-  }
-
   .main__audio-player {
     justify-content: center;
   }
