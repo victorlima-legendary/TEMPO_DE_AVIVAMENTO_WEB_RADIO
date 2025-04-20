@@ -12,10 +12,10 @@
       href="./src/assets/favicon.png"
       type="image/x-icon"
     />
-    <link rel="stylesheet" href="./src/style/reset.css" />
-    <link rel="stylesheet" href="./src/style/style.css" />
-    <link rel="stylesheet" href="./src/style/slider.css" />
     <link rel="stylesheet" href="./src/style/main.css" />
+    <link rel="stylesheet" href="./src/style/style.css" />
+    <link rel="stylesheet" href="./src/style/reset.css" />
+    <link rel="stylesheet" href="./src/style/slider.css" />
     <link rel="stylesheet" href="./src/style/vars.css" />
     <link rel="stylesheet" href="./src/style/slide.css" />
     <link rel="stylesheet" href="./src/style/dropdown_mobile.css" />
@@ -32,30 +32,48 @@
     />
   </head>
   <body>
+    <!-- PLAYER FIXO -->
+    <div class="main__audio-player">
+      <a target="_blank" href="https://wa.me/5511989441340?text=Ola!!">
+        <button>PEDIDO</button>
+      </a>
+      <div class="audio-player__content">
+        <audio
+          autoplay
+          id="audio-stream"
+          src="https://stm4.audio.rbstream.com.br:7162/stream"
+        ></audio>
+        <!--  -->
+        <img id="album-cover" src="" alt="Capa do Álbum" />
+        <div id="now-playing"></div>
+        <div id="play-pause">&#9658;</div>
+      </div>
+    </div>
+    <!-- ======================================== -->
     <div class="page-background">
       <!--  -->
       <div id="header"></div>
-      <!-- IMAGEM -->
-      <div class="page-slider">
-        <!--  -->
-        <picture>
-          <source
-            media="(max-width: 550px)"
-            srcset="./src/assets/slide_mobile.jpeg"
-          />
-          <!--  -->
-          <img
-            width="100%"
-            height="auto"
-            src="./src/assets/slide.webp"
-            alt="Banner Rádio"
-          />
-        </picture>
-        <!--  -->
-      </div>
+      <!--  -->
       <div class="page-content">
         <!-- MAIN CONTENT -->
         <main>
+          <div class="page-slider">
+            <picture>
+              <source
+                media="(max-width: 550px)"
+                srcset="./src/assets/slide_mobile.jpeg"
+              />
+
+              <img
+                width="100%"
+                height="auto"
+                src="./src/assets/slide.webp"
+                alt="Banner Rádio"
+              />
+            </picture>
+            <!--  -->
+          </div>
+          <!--  -->
           <div class="main__palavra-do-dia">
             <picture class="palavra">
               <!--  -->
@@ -78,24 +96,7 @@
         <!--  -->
       </div>
     </div>
-    <!-- PLAYER FIXO -->
-    <div class="main__audio-player">
-      <a target="_blank" href="https://wa.me/5511989441340?text=Ola!!">
-        <button>PEDIDO</button>
-      </a>
-      <div class="audio-player__content">
-        <audio
-          autoplay
-          id="audio-stream"
-          src="https://stm4.audio.rbstream.com.br:7162/stream"
-        ></audio>
-        <!--  -->
-        <img id="album-cover" src="" alt="Capa do Álbum" />
-        <div id="now-playing"></div>
-        <div id="play-pause">&#9658;</div>
-      </div>
-    </div>
-    <!-- ======================================== -->
+
     <script src="./src/js/player.js"></script>
     <script>
       /* CARREGAR CABEÇALHO */

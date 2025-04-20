@@ -1,26 +1,37 @@
-/* ==== CONTEÚDO ==== */
+/* ================ */
+
 .page-content {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 76px;
   width: 100%;
-  height: 100%;
+  height: 100vh;
+  border: 2px solid white;
 }
 
-/* ======================= */
+.page-content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  overflow: auto;
+  border: 2px solid red;
+}
 
-/* ===== MAIN ===== */
+/* ========== MAIN CONTENT ============ */
 
 main {
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   align-items: center;
   flex-direction: column;
-  width: 90%;
-  height: 100%;
-
-  padding: 10px 0;
+  border: 2px solid white;
 }
+
+/* ============================ */
 
 /* PALAVRA DO DIA */
 
@@ -42,7 +53,6 @@ main {
   justify-content: center;
   width: 350px;
   height: auto;
-  /* border: 0.8px solid white; */
 }
 
 .pedido {

@@ -37,7 +37,7 @@ function getNowPlaying() {
 }
 
 function getAlbumCover(artist, title) {
-    // Substitua esta URL pela API de busca de capa do álbum de sua preferência
+
     const apiUrl = `https://itunes.apple.com/search?term=${encodeURIComponent(
         artist + " " + title
     )}&entity=song`;
@@ -51,12 +51,12 @@ function getAlbumCover(artist, title) {
                     "600x600"
                 );
             } else {
-                albumCover.src = "URL_DA_CAPA_PADRAO"; // Substitua pela URL de uma capa padrão
+                albumCover.src = "URL_DA_CAPA_PADRAO";
             }
         })
         .catch((error) => {
             console.error("Erro ao buscar capa do álbum:", error);
-            albumCover.src = "URL_DA_CAPA_PADRAO"; // Substitua pela URL de uma capa padrão
+            albumCover.src = "URL_DA_CAPA_PADRAO";
         });
 }
 
