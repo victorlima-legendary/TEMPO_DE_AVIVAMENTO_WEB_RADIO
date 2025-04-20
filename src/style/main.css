@@ -117,4 +117,25 @@ button {
     inset 0px 0 15px rgba(0, 0, 0, 0.05), inset 0px 0 15px rgba(0, 0, 0, 0.4);
 }
 
+.img-txt {
+  width: 100%;
+}
+
+.img-txt q {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: capitalize;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+}
+
+.img-txt q {
+  color: black;
+  font-weight: 750;
+}
+
 /* =========================== */
