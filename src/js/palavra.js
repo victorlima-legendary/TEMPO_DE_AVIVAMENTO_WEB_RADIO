@@ -10,7 +10,7 @@ async function atualizarFrase() {
             throw new Error("Token não encontrado.");
         }
 
-        const res = await fetch("https://api.github.com/repos/victorlima-legendary/JSON_RADIO/contents/palavra.json", {
+        const res = await fetch("https://api.github.com/repos/victorlima-legendary/JSON_RADIO/contents/word.json", {
             headers: {
                 "Authorization": `Bearer ${GITHUB_TOKEN}`
             }
