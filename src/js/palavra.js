@@ -1,12 +1,10 @@
-// palavra.js
-
 import { getGithubToken } from './limao.js';
 
 async function atualizarFrase() {
     const qTag = document.getElementById("frase");
 
     try {
-        const GITHUB_TOKEN = await getGithubToken();  // Obtém o token dinamicamente
+        const GITHUB_TOKEN = await getGithubToken();
 
         if (!GITHUB_TOKEN) {
             throw new Error("Token não encontrado.");
@@ -14,16 +12,16 @@ async function atualizarFrase() {
 
         const res = await fetch("https://api.github.com/repos/victorlima-legendary/JSON_RADIO/contents/palavra.json", {
             headers: {
-                "Authorization": `Bearer ${GITHUB_TOKEN}`,
-                "Accept": "application/vnd.github.v3.raw"
+                "Authorization": `Bearer ${GITHUB_TOKEN}`
             }
         });
 
-        if (!res.ok) {
-            throw new Error("Falha ao buscar os dados.");
+        const data = await res.json();
+
+        if (!data.content) {
+            throw new Error("Conteúdo não encontrado no JSON.");
         }
 
-        const data = await res.json();
         const base64 = data.content.replace(/\n/g, "");
         const bytes = Uint8Array.from(atob(base64), c => c.charCodeAt(0));
         const conteudo = new TextDecoder("utf-8").decode(bytes);
@@ -37,4 +35,4 @@ async function atualizarFrase() {
 }
 
 atualizarFrase();
-setInterval(atualizarFrase, 1000);  // Atualizar a frase a cada 1 segundo
+setInterval(atualizarFrase, 10000); // Atualiza a cada 10 segundos
