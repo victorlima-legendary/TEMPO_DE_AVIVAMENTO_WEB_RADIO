@@ -1,12 +1,21 @@
-
 const fileURL =
     "https://api.github.com/repos/victorlima-legendary/JSON_RADIO/contents/posts.json";
 
-fetch(fileURL)
-    .then((res) => res.json())
+// Token de acesso pessoal do GitHub
+const token = "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";
+
+fetch(fileURL, {
+    method: 'GET',
+    headers: {
+        'Authorization': `Bearer ${token}`,
+        'Accept': 'application/vnd.github.v3.raw'  // Necessário para obter conteúdo raw de um arquivo
+    }
+})
+    .then((res) => res.json())  // Aqui tratamos a resposta como JSON
     .then((data) => {
-        const content = atob(data.content);
-        const postsData = JSON.parse(content);
+        // Não precisamos mais de atob(), pois o conteúdo já é um JSON válido
+        const postsData = data;  // A resposta do GitHub já é o JSON direto
+
         const container = document.getElementById("postsContainer");
 
         if (postsData && postsData.posts) {
@@ -20,8 +29,6 @@ fetch(fileURL)
                 <p>${post.descricao}</p>
                 <a href="imagens.html?id=${post.id}">Ver Imagens</a>
                 </div>
-                
-                
               `;
                 container.appendChild(div);
             });

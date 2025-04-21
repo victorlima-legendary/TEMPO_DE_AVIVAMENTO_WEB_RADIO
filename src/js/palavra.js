@@ -4,7 +4,7 @@ async function atualizarFrase() {
     try {
         const res = await fetch("https://api.github.com/repos/victorlima-legendary/JSON_RADIO/contents/palavra.json", {
             headers: {
-                "Authorization": "Bearer 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"
+                "Authorization": "Bearer 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"
             }
         });
 
