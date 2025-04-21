@@ -1,4 +1,4 @@
-// NÃO DEFINA MAIS O TOKEN AQUI! Ele já vem do limao.js
+import { GITHUB_TOKEN } from './limao.js';
 
 const fileURL =
     "https://api.github.com/repos/victorlima-legendary/JSON_RADIO/contents/posts.json";

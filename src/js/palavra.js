@@ -1,10 +1,12 @@
+import { GITHUB_TOKEN } from './limao.js';
+
 async function atualizarFrase() {
     const qTag = document.getElementById("frase");
 
     try {
         const res = await fetch("https://api.github.com/repos/victorlima-legendary/JSON_RADIO/contents/palavra.json", {
             headers: {
-                "Authorization": `Bearer ${GITHUB_TOKEN}`  // ✅ Token vindo do limao.js
+                "Authorization": `Bearer ${GITHUB_TOKEN}`
             }
         });
 
