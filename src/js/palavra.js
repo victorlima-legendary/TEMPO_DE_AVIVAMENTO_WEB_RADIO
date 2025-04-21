@@ -1,3 +1,5 @@
+// palavra.js
+
 import { getGithubToken } from './limao.js';
 
 async function atualizarFrase() {
