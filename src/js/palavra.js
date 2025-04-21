@@ -1,14 +1,25 @@
-import { GITHUB_TOKEN } from './limao.js';
+import { getGithubToken } from './limao.js';
 
 async function atualizarFrase() {
     const qTag = document.getElementById("frase");
 
     try {
+        const GITHUB_TOKEN = await getGithubToken();  // Obtém o token dinamicamente
+
+        if (!GITHUB_TOKEN) {
+            throw new Error("Token não encontrado.");
+        }
+
         const res = await fetch("https://api.github.com/repos/victorlima-legendary/JSON_RADIO/contents/palavra.json", {
             headers: {
-                "Authorization": `Bearer ${GITHUB_TOKEN}`
+                "Authorization": `Bearer ${GITHUB_TOKEN}`,
+                "Accept": "application/vnd.github.v3.raw"
             }
         });
+
+        if (!res.ok) {
+            throw new Error("Falha ao buscar os dados.");
+        }
 
         const data = await res.json();
         const base64 = data.content.replace(/\n/g, "");
@@ -24,4 +35,4 @@ async function atualizarFrase() {
 }
 
 atualizarFrase();
-setInterval(atualizarFrase, 1000);
+setInterval(atualizarFrase, 1000);  // Atualizar a frase a cada 1 segundo

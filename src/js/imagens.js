@@ -1,4 +1,6 @@
-import { GITHUB_TOKEN } from './limao.js';
+import { getGithubToken } from './limao.js';
+
+const GITHUB_TOKEN = await getGithubToken();
 
 const urlParams = new URLSearchParams(window.location.search);
 const postId = urlParams.get("id");

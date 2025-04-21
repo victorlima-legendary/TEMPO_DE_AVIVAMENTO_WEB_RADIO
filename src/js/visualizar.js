@@ -1,4 +1,6 @@
-import { GITHUB_TOKEN } from './limao.js';
+import { getGithubToken } from './limao.js';
+
+const GITHUB_TOKEN = await getGithubToken();
 
 const fileURL =
     "https://api.github.com/repos/victorlima-legendary/JSON_RADIO/contents/posts.json";
