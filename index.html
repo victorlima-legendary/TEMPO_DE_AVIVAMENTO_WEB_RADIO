@@ -12,6 +12,7 @@
       href="./src/assets/favicon.png"
       type="image/x-icon"
     />
+    <link rel="stylesheet" href="./src/style/player.css" />
     <link rel="stylesheet" href="./src/style/main.css" />
     <link rel="stylesheet" href="./src/style/style.css" />
     <link rel="stylesheet" href="./src/style/reset.css" />
@@ -20,7 +21,6 @@
     <link rel="stylesheet" href="./src/style/slide.css" />
     <link rel="stylesheet" href="./src/style/dropdown_mobile.css" />
     <link rel="stylesheet" href="./src/style/header.css" />
-    <link rel="stylesheet" href="./src/style/player.css" />
     <link rel="stylesheet" href="./src/style/media-queries.css" />
     <!-- LINK CSS ICONS -->
     <link
@@ -32,24 +32,6 @@
     />
   </head>
   <body>
-    <!-- PLAYER FIXO -->
-    <div class="main__audio-player">
-      <a target="_blank" href="https://wa.me/5511989441340?text=Ola!!">
-        <button>PEDIDO</button>
-      </a>
-      <div class="audio-player__content">
-        <audio
-          autoplay
-          id="audio-stream"
-          src="https://stm4.audio.rbstream.com.br:7162/stream"
-        ></audio>
-        <!--  -->
-        <img id="album-cover" src="" alt="Capa do Álbum" />
-        <div id="now-playing"></div>
-        <div id="play-pause">&#9658;</div>
-      </div>
-    </div>
-    <!-- ======================================== -->
     <div class="page-background">
       <!--  -->
       <div id="header"></div>
@@ -100,7 +82,24 @@
         <!--  -->
       </div>
     </div>
-
+    <!-- PLAYER FIXO -->
+    <div class="main__audio-player">
+      <a target="_blank" href="https://wa.me/5511989441340?text=Ola!!">
+        <button>PEDIDO</button>
+      </a>
+      <div class="audio-player__content">
+        <audio
+          autoplay
+          id="audio-stream"
+          src="https://stm4.audio.rbstream.com.br:7162/stream"
+        ></audio>
+        <!--  -->
+        <img id="album-cover" src="" alt="Capa do Álbum" />
+        <div id="now-playing"></div>
+        <div id="play-pause">&#9658;</div>
+      </div>
+    </div>
+    <!-- ======================================== -->
     <script src="./src/js/player.js"></script>
     <script src="./src/js/palavra.js"></script>
     <script>

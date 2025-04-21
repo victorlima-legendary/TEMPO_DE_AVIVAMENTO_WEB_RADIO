@@ -1,23 +1,26 @@
 /* ================ */
 
-.page-content {
+/* .page-content {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 76px;
+
   width: 100%;
   height: 100vh;
-  /* border: 2px solid white; */
-}
+  
+  
+} */
 
 .page-content {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
+  margin-top: 76px;
   width: 100%;
   height: 100vh;
   overflow: auto;
+  position: relative;
   /* border: 2px solid red; */
 }
 
