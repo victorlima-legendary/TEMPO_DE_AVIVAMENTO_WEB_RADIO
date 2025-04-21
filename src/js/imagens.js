@@ -13,7 +13,7 @@ async function carregarImagens() {
         const postId = urlParams.get("id");
 
         const fileURL =
-            "https://api.github.com/repos/victorlima-legendary/JSON_RADIO/contents/posts.json";
+            "https://api.github.com/repos/victorlima-legendary/JSON_RADIO/contents/postar.json";
 
         const res = await fetch(fileURL, {
             method: 'GET',

@@ -10,7 +10,7 @@ async function carregarPosts() {
         return;
     }
 
-    const fileURL = "https://api.github.com/repos/victorlima-legendary/JSON_RADIO/contents/posts.json";
+    const fileURL = "https://api.github.com/repos/victorlima-legendary/JSON_RADIO/contents/postar.json";
 
     try {
         const res = await fetch(fileURL, {
@@ -31,7 +31,7 @@ async function carregarPosts() {
                 const div = document.createElement("div");
                 div.className = "post";
                 div.innerHTML = `
-                    <img src="${post.imagemPrincipal.link}" alt="Imagem Principal" />
+                    <img src="${post.imagemPrincipal}" alt="Imagem Principal" />
                     <div class="div-txt">
                         <h2>${post.titulo}</h2>
                         <p>${post.descricao}</p>
