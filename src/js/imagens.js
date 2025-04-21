@@ -4,16 +4,15 @@ const postId = urlParams.get("id");
 const fileURL =
     "https://api.github.com/repos/victorlima-legendary/JSON_RADIO/contents/posts.json";
 
-// Token de acesso pessoal do GitHub
-const token = "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";
 
 fetch(fileURL, {
     method: 'GET',
     headers: {
-        'Authorization': `Bearer ${token}`,
-        'Accept': 'application/vnd.github.v3.raw'  // Necessário para obter conteúdo raw de um arquivo
+        'Authorization': `Bearer ${GITHUB_TOKEN}`,
+        'Accept': 'application/vnd.github.v3.raw'
     }
 })
+
     .then((res) => res.json())  // Tratar a resposta diretamente como JSON
     .then((data) => {
         // Não precisamos mais de atob(), pois o GitHub retorna o conteúdo em formato JSON
