@@ -1,0 +1,81 @@
+/* ============================= */
+
+.main-imagens {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  height: auto;
+  margin-top: 78px;
+  padding: 40px 0 0 0;
+}
+
+.main-imagens .main-imagens__content {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  width: 80%;
+  height: auto;
+  background: #1b1b1b;
+  padding: 10px 20px;
+  box-shadow: 0 0 20px 0 black;
+  margin-bottom: 50px;
+}
+
+.main-imagens__content .imagens_txt {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: 100%;
+  text-transform: uppercase;
+  gap: 10px;
+}
+
+.imagens_txt span {
+  font-size: 25px;
+}
+
+/* =============== */
+
+/* ======== IMAGENS ========*/
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  padding: 15px;
+  overflow: hidden;
+}
+
+.content a {
+  margin-top: 15px;
+  padding: 10px 20px;
+  border-radius: 15px;
+  border: 1px solid white;
+  background-color: rgb(143, 49, 49);
+}
+
+#imgContainer {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  width: 100%;
+  gap: 20px;
+  height: auto;
+  flex-direction: column;
+}
+
+.imagens img {
+  border-radius: 10px;
+  width: 100%;
+  height: auto;
+}
+
+.linha {
+  padding-bottom: 20px;
+  border-bottom: 2px solid gray;
+}
