@@ -3,6 +3,8 @@ const playPauseButton = document.getElementById("play-pause");
 const nowPlaying = document.getElementById("now-playing");
 const albumCover = document.getElementById("album-cover");
 
+const CAPA_PADRAO = "https://via.placeholder.com/600x600?text=Capa+Indispon%C3%ADvel";
+
 // Define o ícone inicial com base no estado do áudio
 if (audio.paused) {
     playPauseButton.innerHTML = '<i class="fa fa-play"></i>';
@@ -25,19 +27,24 @@ function getNowPlaying() {
         .then((response) => response.text())
         .then((data) => {
             const parts = data.split("-");
-            const artist = parts[0].trim();
-            const title = parts[1].trim();
-            nowPlaying.innerHTML = `${artist} - ${title}`;
-            getAlbumCover(artist, title);
+            if (parts.length >= 2) {
+                const artist = parts[0].trim();
+                const title = parts[1].trim();
+                nowPlaying.innerHTML = `${artist} - ${title}`;
+                getAlbumCover(artist, title);
+            } else {
+                nowPlaying.innerHTML = "Transmissão ao vivo";
+                albumCover.src = CAPA_PADRAO;
+            }
         })
         .catch((error) => {
             console.error("Erro ao buscar nome da música:", error);
             nowPlaying.innerHTML = "Nome da música indisponível";
+            albumCover.src = CAPA_PADRAO;
         });
 }
 
 function getAlbumCover(artist, title) {
-
     const apiUrl = `https://itunes.apple.com/search?term=${encodeURIComponent(
         artist + " " + title
     )}&entity=song`;
@@ -51,15 +58,14 @@ function getAlbumCover(artist, title) {
                     "600x600"
                 );
             } else {
-                albumCover.src = "URL_DA_CAPA_PADRAO";
+                albumCover.src = CAPA_PADRAO;
             }
         })
         .catch((error) => {
             console.error("Erro ao buscar capa do álbum:", error);
-            albumCover.src = "URL_DA_CAPA_PADRAO";
+            albumCover.src = CAPA_PADRAO;
         });
 }
 
 setInterval(getNowPlaying, 5000);
 getNowPlaying();
-
