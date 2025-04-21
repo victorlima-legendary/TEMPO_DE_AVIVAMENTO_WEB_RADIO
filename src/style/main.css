@@ -121,19 +121,24 @@ button {
   width: 100%;
 }
 
-.img-txt q {
+.img-txt span {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   text-transform: capitalize;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   position: absolute;
+  padding: 0 30px;
+  gap: 5px;
+  text-align: center;
 }
 
-.img-txt q {
+.img-txt span,
+q {
   color: black;
   font-weight: 750;
 }

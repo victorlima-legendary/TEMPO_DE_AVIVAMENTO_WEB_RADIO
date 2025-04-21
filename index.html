@@ -76,7 +76,6 @@
           <!--  -->
           <div class="main__palavra-do-dia">
             <picture class="palavra">
-              <!--  -->
               <div class="img-txt">
                 <img
                   width="100%"
@@ -84,7 +83,9 @@
                   src="./src/assets/palavra.png"
                   alt="word_image"
                 />
-                <q>palavra aqui</q>
+                <span style="color: black"
+                  >Palavra do Dia - <q id="frase"></q
+                ></span>
               </div>
             </picture>
             <!--  -->
@@ -101,6 +102,7 @@
     </div>
 
     <script src="./src/js/player.js"></script>
+    <script src="./src/js/palavra.js"></script>
     <script>
       /* CARREGAR CABEÇALHO */
       fetch("header.html")
