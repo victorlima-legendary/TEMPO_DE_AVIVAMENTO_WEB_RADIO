@@ -31,7 +31,8 @@ async function carregarPosts() {
                 const div = document.createElement("div");
                 div.className = "post";
                 div.innerHTML = `
-                    <img src="${post.imagemPrincipal}" alt="Imagem Principal" />
+                    <img src="${post.imagemPrincipal.link}" alt="Imagem Principal" />
+
                     <div class="div-txt">
                         <h2>${post.titulo}</h2>
                         <p>${post.descricao}</p>
