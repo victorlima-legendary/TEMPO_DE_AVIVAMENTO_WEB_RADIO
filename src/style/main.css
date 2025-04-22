@@ -37,6 +37,8 @@ main {
   margin-top: 20px;
   flex-wrap: wrap;
   overflow: hidden;
+  padding-bottom: 30px;
+  border-bottom: 1px solid gray;
 }
 
 .palavra,
