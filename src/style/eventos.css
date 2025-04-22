@@ -45,13 +45,19 @@
   align-items: start;
   flex-direction: column;
   padding: 15px;
-  width: 100%;
+  width: 80%;
   height: auto;
   background-color: #2a2a2ade;
   overflow: hidden;
   border-radius: 5px;
   margin-top: 20px;
   /* border: 2px solid white; */
+}
+
+.container-eventos__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .post img {
