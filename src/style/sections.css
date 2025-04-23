@@ -28,8 +28,9 @@
   background-color: #2a2a2ade;
   border-radius: 5px;
   max-width: 500px;
+  width: 100%;
+  height: 370px;
   padding: 10px;
-  /*   border: 2px solid white; */
 }
 
 .player .video {
@@ -41,6 +42,7 @@
   gap: 20px;
   /* border: 2px solid white; */
   width: 100%;
+  /*   border: 2px solid white; */
 }
 
 .player .video span {
@@ -57,3 +59,173 @@
 }
 
 /* ====================== */
+
+/* ========== EVENTOS ============ */
+
+.sections__player {
+  display: flex;
+  justify-content: flex-start;
+  align-items: start;
+  flex-wrap: wrap;
+  white-space: wrap;
+  gap: 50px;
+  /*   border: 2px solid rgb(255, 30, 30); */
+}
+/* 
+.div-txt h2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.eventos_post p {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border: 2px solid white;
+} */
+/* ================================ */
+
+.eventos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2a2a2ade;
+  border-radius: 5px;
+  max-width: 500px;
+  width: 100%;
+  height: 370px;
+  padding: 5px;
+}
+
+.eventos-content {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
+  padding: 5px;
+  gap: 20px;
+  /* border: 2px solid white; */
+  width: 100%;
+  height: 100%;
+  /*   border: 2px solid white; */
+}
+
+.eventos-content span {
+  /*   border: 2px solid white; */
+  display: flex;
+  /*   border: 2px solid white; */
+  width: 100%;
+  padding: 10px 0 0 0;
+  gap: 10px;
+}
+
+.eventos-content .eventos_post {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 220px;
+  height: 300px;
+  margin-left: 8px;
+  margin-top: 5px;
+  /* border: 1px solid white; */
+}
+
+/* =========== ELEMENTO JS =========== */
+
+.post {
+  position: relative;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  /* white-space: nowrap; */
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  border: 2px solid rgb(64, 64, 64);
+}
+
+/* .post .post__img {
+  border: 1px solid white;
+  width: 180px;
+  min-height: 230px;
+} */
+
+.post img {
+  width: 100%;
+  height: auto;
+}
+
+#txt_events {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 500;
+  padding: 10px;
+}
+
+#txt_events::before {
+  position: absolute;
+  background: linear-gradient(
+    to top,
+    #141414 0%,
+    #141414 30%,
+    #141414 40%,
+    transparent 80%
+  );
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+#txt_events h2,
+p {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  margin: 0;
+  padding: 5px 0 0 5px;
+}
+
+#txt_events {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  gap: 2px;
+}
+
+#txt_events h2 {
+  font-size: 20px;
+}
+
+#txt_events p {
+  -webkit-line-clamp: 2;
+}
+
+#txt_events a {
+  display: none;
+}
+
+/* .post img {
+  border: 1px solid white;
+  width: 900px;
+} */
+
+/* ================== */

@@ -39,6 +39,7 @@ main {
   overflow: hidden;
   padding-bottom: 30px;
   border-bottom: 1px solid gray;
+  pointer-events: none;
 }
 
 .palavra,
