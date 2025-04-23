@@ -68,6 +68,7 @@
   align-items: start;
   flex-wrap: wrap;
   white-space: wrap;
+  width: 100%;
   gap: 50px;
   /*   border: 2px solid rgb(255, 30, 30); */
 }
@@ -112,6 +113,7 @@
   /* border: 2px solid white; */
   width: 100%;
   height: 100%;
+  overflow: hidden;
   /*   border: 2px solid white; */
 }
 
@@ -128,7 +130,7 @@
   display: flex;
   justify-content: start;
   align-items: center;
-  width: 100%;
+  width: 400px;
   height: 300px;
   margin-left: 8px;
   margin-top: 5px;
