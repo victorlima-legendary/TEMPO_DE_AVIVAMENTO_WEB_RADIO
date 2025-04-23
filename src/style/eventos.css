@@ -7,6 +7,7 @@
   /* border: 2px solid white; */
   margin-top: 75px;
   padding: 40px 0 0 0;
+  flex-direction: column;
 }
 
 .main-eventos .main-eventos__content {
@@ -51,6 +52,7 @@
   overflow: hidden;
   border-radius: 5px;
   margin-top: 20px;
+
   /* border: 2px solid white; */
 }
 
@@ -58,6 +60,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 .post img {
