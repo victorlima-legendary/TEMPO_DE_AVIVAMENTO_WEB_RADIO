@@ -87,9 +87,9 @@
   overflow: auto;
 }
 
-/* ::-webkit-scrollbar {
+.eventos_post::-webkit-scrollbar {
   display: none;
-} */
+}
 
 /* =========== ELEMENTO JS =========== */
 
