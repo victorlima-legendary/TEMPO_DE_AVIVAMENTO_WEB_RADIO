@@ -18,3 +18,23 @@
   /* border players */
   --border-1px: 1px solid white;
 }
+
+/* ============== SCROLL STYLE ================= */
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #4e4e4e;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3e3e3e;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* ============================== */
