@@ -93,7 +93,7 @@
 
 /* =========== ELEMENTO JS =========== */
 
-.post {
+.post2 {
   position: relative;
   display: flex;
   justify-content: start;
@@ -114,7 +114,7 @@
     min-height: 230px;
   } */
 
-.post img {
+.post2 img {
   width: 100%;
   height: 100%;
 }

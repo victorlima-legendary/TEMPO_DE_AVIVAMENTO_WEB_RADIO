@@ -34,7 +34,7 @@ async function carregarImagens() {
         if (post && post.imagensComplementares && post.imagensComplementares.length > 0) {
             post.imagensComplementares.forEach((img) => {
                 const image = document.createElement("img");
-                image.src = img.link;
+                image.src = img;
                 image.alt = "Imagem Complementar";
                 container.appendChild(image);
             });

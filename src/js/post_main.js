@@ -29,10 +29,10 @@ async function carregarPosts() {
         if (postsData && postsData.posts) {
             postsData.posts.forEach((post) => {
                 const div = document.createElement("div");
-                div.className = "post";
+                div.className = "post2";
                 div.innerHTML = `
                     
-                    <img src="${post.imagemPrincipal.link}" alt="Imagem Principal" />
+                    <img src="${post.imagemPrincipal}" alt="Imagem Principal" />
                   
 
                     <div class="div-txt" id="txt_events">
@@ -41,6 +41,7 @@ async function carregarPosts() {
                         <a href="imagens.html?id=${post.id}">Ver Imagens</a>
                     </div>
                 `;
+
                 container.appendChild(div);
             });
         }
