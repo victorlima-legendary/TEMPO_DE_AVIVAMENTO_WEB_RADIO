@@ -21,6 +21,7 @@
   padding: 10px 20px;
   box-shadow: 0 0 20px 0 black;
   margin-bottom: 50px;
+  padding-bottom: 20px;
 }
 
 .main-eventos__content .eventos_txt {
@@ -51,8 +52,7 @@
   background-color: #2a2a2ade;
   overflow: hidden;
   border-radius: 5px;
-  margin-top: 20px;
-
+  margin-top: 10px;
   /* border: 2px solid white; */
 }
 
