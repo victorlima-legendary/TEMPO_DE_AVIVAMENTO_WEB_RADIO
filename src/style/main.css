@@ -8,7 +8,7 @@
   margin-top: 76px;
   width: 100%;
   height: 100vh;
-  /* overflow: auto; */
+  overflow: auto;
   position: relative;
   /* border: 2px solid red; */
 }
@@ -53,6 +53,7 @@ main {
 }
 
 .pedido {
+  pointer-events: auto;
   display: flex;
   align-items: center;
   justify-content: start;
