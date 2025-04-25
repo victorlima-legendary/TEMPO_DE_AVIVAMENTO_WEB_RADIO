@@ -1,10 +1,19 @@
+.ads {
+  padding-top: 30px;
+}
+
 .ads-content {
   display: flex;
   justify-content: center;
   align-items: center;
-
+  flex-direction: column;
+  gap: 20px;
   width: 100%;
   height: auto;
+}
+
+.ads-content span {
+  text-transform: uppercase;
 }
 
 .ads-content__content {
