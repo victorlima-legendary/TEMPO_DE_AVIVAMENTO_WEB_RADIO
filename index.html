@@ -17,8 +17,10 @@
     <!-- Pré-carregar CSS -->
     <link rel="preload" href="./src/style/player.css" as="style" />
     <link rel="preload" href="./src/style/main.css" as="style" />
+    <link rel="stylesheet" href="./src/style/ads_content.css" />
     <link rel="preload" href="./src/style/style.css" as="style" />
     <link rel="preload" href="./src/style/reset.css" as="style" />
+    <link rel="stylesheet" href="./src/style/keyframes.css" />
     <link rel="stylesheet" href="./src/style/eventos_section.css" />
     <link rel="preload" href="./src/style/slider.css" as="style" />
     <link rel="preload" href="./src/style/vars.css" as="style" />
@@ -29,7 +31,9 @@
     <!-- Links para CSS -->
     <link rel="stylesheet" href="./src/style/player.css" />
     <link rel="stylesheet" href="./src/style/main.css" />
+    <link rel="stylesheet" href="./src/style/keyframes.css" />
     <link rel="stylesheet" href="./src/style/style.css" />
+    <link rel="stylesheet" href="./src/style/ads_content.css" />
     <link rel="stylesheet" href="./src/style/eventos_section.css" />
     <link rel="stylesheet" href="./src/style/reset.css" />
     <link rel="stylesheet" href="./src/style/slider.css" />
@@ -127,7 +131,25 @@
               </div>
             </div>
             <!--  -->
-            <div id="sections"></div>
+            <div id="sections" class="ads">
+              <div class="ads-content">
+                <div class="ads-content__content">
+                  <!--  -->
+                  <div class="arrows">
+                    <span id="arrow-left" class="fa-solid fa-arrow-left"></span>
+                    <span
+                      id="arrow-right"
+                      class="fa-solid fa-arrow-right"
+                    ></span>
+                  </div>
+                  <!--  -->
+                  <div class="img-ads">
+                    <!-- AS IMAGENS SERÃO CARREGADAS AQUI -->
+                  </div>
+                </div>
+                <!--  -->
+              </div>
+            </div>
             <!--  -->
             <div id="sections"></div>
             <!--  -->
@@ -139,6 +161,7 @@
         <!--  -->
       </div>
     </div>
+    <!-- ------------ -->
     <!-- PLAYER FIXO -->
     <div class="main__audio-player">
       <a target="_blank" href="https://wa.me/5511989441340?text=Ola!!">
@@ -157,6 +180,91 @@
       </div>
     </div>
     <!-- ======================================== -->
+    <script type="module">
+      import { getGithubToken } from "./src/js/limao.js";
+
+      const repoOwner = "victorlima-legendary";
+      const repoName = "JSON_RADIO";
+      const jsonFile = "ads.json";
+
+      const container = document.querySelector(".img-ads");
+      const arrowLeft = document.getElementById("arrow-left");
+      const arrowRight = document.getElementById("arrow-right");
+
+      let currentIndex = 0;
+      let totalItems = 0;
+      let scrollInterval;
+
+      async function carregarAnuncios() {
+        const githubToken = await getGithubToken();
+
+        if (!githubToken) {
+          console.error("Token inválido ou não carregado.");
+          return;
+        }
+
+        try {
+          const res = await fetch(
+            `https://api.github.com/repos/${repoOwner}/${repoName}/contents/${jsonFile}`,
+            {
+              headers: {
+                Authorization: `Bearer ${githubToken}`,
+              },
+            }
+          );
+
+          const data = await res.json();
+          const content = atob(data.content);
+          const json = JSON.parse(content);
+
+          const imagens = json.imagens || [];
+          totalItems = imagens.length;
+
+          imagens.forEach((img) => {
+            const imgWrapper = document.createElement("div");
+            imgWrapper.classList.add("img-ads__item");
+
+            const el = document.createElement("img");
+            el.src = img.link;
+            el.alt = img.nome;
+
+            imgWrapper.appendChild(el);
+            container.appendChild(imgWrapper);
+          });
+        } catch (error) {
+          console.error("Erro ao carregar imagens:", error);
+        }
+      }
+
+      function scrollToIndex(index) {
+        const width = container.clientWidth;
+        container.scrollTo({ left: index * width, behavior: "smooth" });
+      }
+
+      function rolarAutomaticamente() {
+        scrollInterval = setInterval(() => {
+          currentIndex = (currentIndex + 1) % totalItems;
+          scrollToIndex(currentIndex);
+        }, 5000);
+      }
+
+      arrowLeft.addEventListener("click", () => {
+        clearInterval(scrollInterval);
+        currentIndex = (currentIndex - 1 + totalItems) % totalItems;
+        scrollToIndex(currentIndex);
+        rolarAutomaticamente();
+      });
+
+      arrowRight.addEventListener("click", () => {
+        clearInterval(scrollInterval);
+        currentIndex = (currentIndex + 1) % totalItems;
+        scrollToIndex(currentIndex);
+        rolarAutomaticamente();
+      });
+
+      carregarAnuncios().then(rolarAutomaticamente);
+    </script>
+
     <script type="module" src="./src/js/post_main.js"></script>
     <script type="module" src="./src/js/limao.js"></script>
     <script type="module" src="./src/js/palavra.js"></script>
