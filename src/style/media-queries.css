@@ -128,4 +128,8 @@
     height: 90px;
     justify-content: center;
   }
+
+  .main-imagens .main-imagens__content {
+    width: 90%;
+  }
 }
