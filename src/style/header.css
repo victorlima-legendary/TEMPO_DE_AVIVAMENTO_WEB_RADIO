@@ -31,8 +31,11 @@ header nav a {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 5px;
-  transition: color 0.5s ease;
+  gap: 6px; /* espaçamento entre ícone e texto */
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  line-height: 1;
 }
 
 header nav a span {
@@ -42,4 +45,10 @@ header nav a span {
 header nav a:hover,
 header nav a:hover span {
   color: var(--bg-bottom-header);
+}
+
+header .fa-solid,
+.fa-regular,
+.fa-brands {
+  font-size: 15px;
 }

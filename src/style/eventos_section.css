@@ -10,23 +10,7 @@
   gap: 50px;
   /*   border: 2px solid rgb(255, 30, 30); */
 }
-/* 
-  .div-txt h2 {
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-  
-  .eventos_post p {
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    border: 2px solid white;
-  } */
+
 /* ================================ */
 
 .eventos {
