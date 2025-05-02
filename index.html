@@ -177,7 +177,10 @@
                 />
               </picture>
               <div class="section--footer__info">
-                <span>Copyright © 2025 Web Rádio - TEMPO DE AVIVAMENTO.</span>
+                <span
+                  >Copyright © <span id="year"></span> Web Rádio - TEMPO DE
+                  AVIVAMENTO.</span
+                >
                 <p>Todos os direitos Reservados.</p>
               </div>
             </div>
@@ -220,6 +223,10 @@
       </div>
     </div>
     <!-- ======================================== -->
+    <script>
+      // Insere o ano atual no elemento com id "ano"
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
     <script type="module">
       import { getGithubToken } from "./src/js/limao.js";
 
