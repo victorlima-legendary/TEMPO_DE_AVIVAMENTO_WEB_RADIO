@@ -17,7 +17,7 @@
 <details>
 
   <summary>🚧 Projeto em desenvolvimento</summary>
-  <p>O site ainda está sendo construído. Algumas seções podem estar incompletas ou com bugs. feedbacks são bem-vindos!</p>
+  <p>O site ainda está sendo desenvolvido. Algumas seções podem estar incompletas ou com bugs. feedbacks são bem-vindos!</p>
 </details>
 
 
