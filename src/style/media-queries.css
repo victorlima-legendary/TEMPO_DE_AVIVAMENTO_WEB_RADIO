@@ -132,4 +132,16 @@
   .main-imagens .main-imagens__content {
     width: 90%;
   }
+
+  .align--content-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .section--footer__info {
+    border: none;
+    padding: 0;
+  }
 }

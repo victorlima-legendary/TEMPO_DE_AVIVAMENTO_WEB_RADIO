@@ -12,7 +12,8 @@
   --mask-image: ;
   --bg-bottom-header: #d4af37;
   --bg-footer: linear-gradient(90deg, #000000ee, #181818ee, #c89016ee);
-
+  --footer-bg: transparent;
+  --footer-bg-icons: rgba(41, 41, 41, 0.646);
   /* font sections var */
   --font-sections: 22px;
   /* border players */
