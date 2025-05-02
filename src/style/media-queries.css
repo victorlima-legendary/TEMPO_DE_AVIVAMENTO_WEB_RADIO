@@ -89,6 +89,9 @@
   button {
     font-size: 14px;
   }
+  .section--footer__content {
+    padding-bottom: 0;
+  }
 }
 
 @media only screen and (max-width: 550px) {
