@@ -58,5 +58,10 @@
 
 .section--footer__info span,
 p {
+  font-size: 14px;
   color: rgba(255, 255, 255, 0.662);
+}
+
+.section--footer__info span {
+  line-height: 20px;
 }
