@@ -1,4 +1,9 @@
-![Status](https://img.shields.io/badge/STATUS-EM%20DESENVOLVIMENTO-yellow?style=for-the-badge)
+![Status](https://img.shields.io/badge/STATUS-FIRST%20VERSION%20RELEASED-RED?style=for-the-badge)
+</br>
+## FIRST VERSION HAS BEEN RELEASED, NEXT UPDATES WILL NOT BEEN POSTED HERE.
+</br>
+<p>Why? from now on, next version of this website will be private. beacause of this, this repository will no longer be updated. this first version is here to help me with my portfolio.<p>
+</br>
 <h1 align="center">🚀 PROJETO WEB RÁDIO </h1>
 
 <p align="center">
