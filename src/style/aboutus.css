@@ -1,12 +1,75 @@
 main {
   display: flex;
-  justify-content: center;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
   width: 100%;
+  height: 100%;
   margin-top: 80px;
 }
 
 .main__content--aboutus {
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
   width: 90%;
-  height: 100vh;
-  border: 2px solid white;
+}
+
+/* ==================== */
+
+.main__content--aboutus span {
+  text-transform: uppercase;
+  white-space: nowrap;
+  font-weight: 700;
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  padding: 50px 20px 28px 40px;
+  font-size: 25px;
+  border-bottom: 1px solid gray;
+  font-size: clamp(20px, 8vw, 2rem);
+}
+
+.content-logo {
+  display: flex;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  border: 4px solid rgba(255, 255, 255, 0.55);
+  border-style: double;
+  overflow: hidden;
+  align-items: center;
+  background-image: url("../assets/Ministério_Colheita.png");
+  background-position: center;
+  background-size: 250px;
+  background-repeat: no-repeat;
+  background-clip: border-box;
+  background-color: #000;
+}
+
+#section-aboutus {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  flex-grow: 1;
+  height: 100%;
+}
+
+#section-aboutus p {
+  max-width: 700px;
+  line-height: 22px;
+  font-size: 18px;
+  text-align: justify;
+}
+
+.logo {
+  padding: 20px;
+}
+
+.content--aboutus {
+  padding-top: 20px;
+  gap: 20px;
+  display: flex;
+  margin: 0 30px;
 }

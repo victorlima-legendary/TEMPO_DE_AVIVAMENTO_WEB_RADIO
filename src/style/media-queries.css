@@ -8,6 +8,10 @@
     width: 100%;
   }
 
+  #section-aboutus p {
+    text-align: left;
+  }
+
   .contato_btn {
     display: flex;
     justify-content: center;
@@ -146,5 +150,14 @@
   .section--footer__info {
     border: none;
     padding: 0;
+  }
+
+  .content--aboutus {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #section-aboutus p {
+    text-align: justify;
   }
 }
