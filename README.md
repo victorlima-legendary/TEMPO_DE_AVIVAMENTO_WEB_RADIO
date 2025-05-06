@@ -2,6 +2,7 @@
 </br>
 ## FIRST VERSION HAS BEEN RELEASED, NEXT UPDATES WILL NOT BEEN POSTED HERE.
 </br>
+<p>Why? from now on next version of this website will be private<p>
 <h1 align="center">🚀 PROJETO WEB RÁDIO </h1>
 
 <p align="center">
