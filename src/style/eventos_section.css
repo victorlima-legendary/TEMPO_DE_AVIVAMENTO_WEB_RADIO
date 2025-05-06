@@ -85,9 +85,9 @@
   flex-direction: column;
   /* white-space: nowrap; */
   overflow: hidden;
-  min-width: 200px;
+  min-width: 190px;
   height: 290px;
-  border-radius: 18px;
+  border-radius: 20px;
   margin-left: 5px;
   border: 2px solid rgb(64, 64, 64);
 }

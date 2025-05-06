@@ -27,6 +27,7 @@
   border: 1px solid white;
   overflow: hidden;
   margin: 0 10px;
+  border-radius: 5px;
 }
 
 .img-ads {
