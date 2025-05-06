@@ -166,46 +166,7 @@
             <!--  -->
           </div>
         </main>
-        <footer class="footer" style="padding-bottom: 90px">
-          <div class="section--footer__content">
-            <div class="align--content-footer">
-              <picture>
-                <source
-                  height="55px"
-                  media="(max-width: 550px)"
-                  srcset="./src/assets/image.png"
-                />
-                <img
-                  width="200px"
-                  src="./src/assets/image.png"
-                  alt="Banner Rádio"
-                />
-              </picture>
-              <div class="section--footer__info">
-                <span
-                  >Copyright © <span id="year"></span> Web Rádio - TEMPO DE
-                  AVIVAMENTO.</span
-                >
-                <p>Todos os direitos Reservados.</p>
-              </div>
-            </div>
-            <!--  -->
-            <div class="section--footer__social">
-              <a href="#" id="social_media"
-                ><span class="fa-brands fa-facebook"></span
-              ></a>
-              <a href="#" id="social_media"
-                ><span class="fa-brands fa-instagram"></span
-              ></a>
-              <a href="#" id="social_media"
-                ><span class="fa-brands fa-deezer"></span
-              ></a>
-              <a href="#" id="social_media"
-                ><span class="fa-brands fa-spotify"></span
-              ></a>
-            </div>
-          </div>
-        </footer>
+        <div id="footer"></div>
         <!--  -->
       </div>
     </div>
@@ -321,11 +282,15 @@
     <script type="module" src="./src/js/palavra.js"></script>
     <script src="./src/js/player.js"></script>
     <script>
-      /* CARREGAR CABEÇALHO */
       fetch("header.html")
         .then((response) => response.text())
         .then((data) => {
           document.getElementById("header").innerHTML = data;
+        });
+      fetch("footer.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("footer").innerHTML = data;
         });
     </script>
   </body>

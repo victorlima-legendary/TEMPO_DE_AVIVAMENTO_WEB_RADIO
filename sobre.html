@@ -14,6 +14,8 @@
     />
     <link rel="stylesheet" href="./src/style/reset.css" />
     <link rel="stylesheet" href="./src/style/style.css" />
+    <link rel="stylesheet" href="./src/style/aboutus.css" />
+    <link rel="stylesheet" href="./src/style/footer.css" />
     <link rel="stylesheet" href="./src/style/vars.css" />
     <link rel="stylesheet" href="./src/style/slide.css" />
     <link rel="stylesheet" href="./src/style/dropdown_mobile.css" />
@@ -32,13 +34,23 @@
   <body>
     <div id="header"></div>
     <!--  -->
+    <main>
+      <div class="main__content--aboutus">
+        <!--  -->
+      </div>
+    </main>
+    <div id="footer"></div>
     <!--  -->
     <script>
-      /* CARREGAR CABEÇALHO */
       fetch("header.html")
         .then((response) => response.text())
         .then((data) => {
           document.getElementById("header").innerHTML = data;
+        });
+      fetch("footer.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("footer").innerHTML = data;
         });
     </script>
   </body>
