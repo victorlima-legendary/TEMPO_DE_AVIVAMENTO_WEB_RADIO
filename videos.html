@@ -3,24 +3,44 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="" />
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
     <title>WEB RÁDIO - TEMPO DE AVIVAMENTO</title>
-    <link
-      rel="shortcut icon"
-      href="./src/assets/favicon.png"
-      type="image/x-icon"
-    />
-    <link rel="stylesheet" href="./src/style/reset.css" />
-    <link rel="stylesheet" href="./src/style/style.css" />
-    <link rel="stylesheet" href="./src/style/vars.css" />
-    <link rel="stylesheet" href="./src/style/slide.css" />
+    <!-- Pré-carregar CSS -->
+    <link rel="preload" href="./src/style/player.css" as="style" />
+    <link rel="preload" href="./src/style/main.css" as="style" />
+    <link rel="preload" href="./src/style/footer.css" as="style" />
+    <link rel="preload" href="./src/style/ads_content.css" as="style" />
+    <link rel="preload" href="./src/style/style.css" as="style" />
+    <link rel="preload" href="./src/style/reset.css" as="style" />
+    <link rel="preload" href="./src/style/keyframes.css" as="style" />
+    <link rel="preload" href="./src/style/eventos_section.css" as="style" />
+    <link rel="preload" href="./src/style/slider.css" as="style" />
+    <link rel="preload" href="./src/style/vars.css" as="style" />
+    <link rel="preload" href="./src/style/dropdown_mobile.css" as="style" />
+    <link rel="preload" href="./src/style/header.css" as="style" />
+    <link rel="preload" href="./src/style/media-queries.css" as="style" />
+
+    <!-- Links para CSS -->
     <link rel="stylesheet" href="./src/style/videos.css" />
+    <link rel="stylesheet" href="./src/style/player.css" />
+    <link rel="stylesheet" href="./src/style/main.css" />
+    <link rel="stylesheet" href="./src/style/footer.css" />
+    <link rel="stylesheet" href="./src/style/keyframes.css" />
+    <link rel="stylesheet" href="./src/style/style.css" />
+    <link rel="stylesheet" href="./src/style/ads_content.css" />
+    <link rel="stylesheet" href="./src/style/eventos_section.css" />
+    <link rel="stylesheet" href="./src/style/reset.css" />
+    <link rel="stylesheet" href="./src/style/slider.css" />
+    <link rel="stylesheet" href="./src/style/sections.css" />
+    <link rel="stylesheet" href="./src/style/vars.css" />
     <link rel="stylesheet" href="./src/style/dropdown_mobile.css" />
     <link rel="stylesheet" href="./src/style/header.css" />
-    <link rel="stylesheet" href="./src/style/player.css" />
     <link rel="stylesheet" href="./src/style/media-queries.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- LINK CSS ICONS -->
     <link
       rel="stylesheet"
@@ -33,14 +53,20 @@
   <body>
     <div id="header"></div>
     <!--  -->
-    <div class="main-videos">
-      <div class="main-videos__content">
-        <!--  -->
-        <span>ESTE CONTEÚDO ESTÁ INDISPONÍVEL POR ENQUANTO</span>
-        <!--  -->
+    <div class="videos-content">
+      <span><i class="fa fa-play"></i>vídeos</span>
+      <div class="videos_content">
+        <div id="videos__content"></div>
+        <div id="videos__content"></div>
+        <div id="videos__content"></div>
+        <div id="videos__content"></div>
+        <div id="videos__content"></div>
+        <div id="videos__content"></div>
+        <div id="videos__content"></div>
+        <div id="videos__content"></div>
+        <div id="videos__content"></div>
       </div>
     </div>
-    <!--  -->
     <script>
       /* CARREGAR CABEÇALHO */
       fetch("header.html")
