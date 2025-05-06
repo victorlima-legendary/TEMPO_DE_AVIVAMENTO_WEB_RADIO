@@ -1,4 +1,7 @@
 ![Status](https://img.shields.io/badge/STATUS-FIRST%20VERSION%20RELEASED-RED?style=for-the-badge)
+</br>
+## FIRST VERSION HAS BEEN RELEASED, NEXT UPDATES WILL NOT BEEN POSTED HERE.
+</br>
 <h1 align="center">🚀 PROJETO WEB RÁDIO </h1>
 
 <p align="center">
