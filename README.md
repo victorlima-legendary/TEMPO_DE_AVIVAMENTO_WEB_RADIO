@@ -1,4 +1,4 @@
-![Status](https://img.shields.io/badge/STATUS-FIRST%20VERSION%20REALEASED-RED?style=for-the-badge)
+![Status](https://img.shields.io/badge/STATUS-FIRST%20VERSION%20RELEASED-RED?style=for-the-badge)
 <h1 align="center">🚀 PROJETO WEB RÁDIO </h1>
 
 <p align="center">
