@@ -2,7 +2,7 @@
 </br>
 ## FIRST VERSION HAS BEEN RELEASED, NEXT UPDATES WILL NOT BEEN POSTED HERE.
 </br>
-<p>Why? from now on, next version of this website will be private. beacause of this, this repository will no longer be updated<p>
+<p>Why? from now on, next version of this website will be private. beacause of this, this repository will no longer be updated. this first version is here to help me with my portfolio.<p>
 </br>
 <h1 align="center">🚀 PROJETO WEB RÁDIO </h1>
 
