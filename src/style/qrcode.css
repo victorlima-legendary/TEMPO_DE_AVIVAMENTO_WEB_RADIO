@@ -1,0 +1,47 @@
+.pix-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 80%;
+
+  flex-wrap: wrap;
+}
+
+.pix-area #pixarea {
+  display: flex;
+
+  padding: 20px 10px;
+  max-width: 500px;
+  flex-basis: 500px;
+}
+
+/* ========================= */
+
+.pix-area__qrcode {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pix-area__qrcode img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 10px;
+  width: 250px;
+}
+
+/* =================== */
+
+.pix-area__qrcode-txt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pix-area--text {
+  text-align: justify;
+  line-height: 18px;
+}
