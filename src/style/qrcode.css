@@ -42,6 +42,15 @@
 }
 
 .pix-area--text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   text-align: justify;
   line-height: 18px;
+}
+
+.pix-area--text h3 {
+  text-transform: capitalize;
+  line-height: 1.2;
 }

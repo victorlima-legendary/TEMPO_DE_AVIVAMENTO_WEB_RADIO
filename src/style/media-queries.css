@@ -160,4 +160,8 @@
   #section-aboutus p {
     text-align: justify;
   }
+
+  .pix-area--text {
+    width: 350px;
+  }
 }
