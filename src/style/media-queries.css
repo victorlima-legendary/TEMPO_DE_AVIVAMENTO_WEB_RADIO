@@ -164,4 +164,8 @@
   .pix-area--text {
     width: 350px;
   }
+
+  .pix-area--text h3 {
+    text-align: center;
+  }
 }
