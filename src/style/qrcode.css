@@ -31,6 +31,8 @@
   overflow: hidden;
   border-radius: 10px;
   width: 250px;
+  background: white;
+  padding: 2px;
 }
 
 /* =================== */
