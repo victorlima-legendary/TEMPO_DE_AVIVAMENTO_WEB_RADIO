@@ -5,14 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WEB RÁDIO - TEMPO DE AVIVAMENTO</title>
     <!-- Pré-carregar CSS -->
-    <link rel="preload" href="./src/style/player.css" as="style" />
     <link rel="preload" href="./src/style/main.css" as="style" />
     <link rel="preload" href="./src/style/footer.css" as="style" />
-    <link rel="preload" href="./src/style/ads_content.css" as="style" />
     <link rel="preload" href="./src/style/style.css" as="style" />
     <link rel="preload" href="./src/style/reset.css" as="style" />
     <link rel="preload" href="./src/style/keyframes.css" as="style" />
-    <link rel="preload" href="./src/style/eventos_section.css" as="style" />
     <link rel="preload" href="./src/style/slider.css" as="style" />
     <link rel="preload" href="./src/style/vars.css" as="style" />
     <link rel="preload" href="./src/style/dropdown_mobile.css" as="style" />
@@ -21,16 +18,12 @@
 
     <!-- Links para CSS -->
     <link rel="stylesheet" href="./src/style/videos.css" />
-    <link rel="stylesheet" href="./src/style/player.css" />
     <link rel="stylesheet" href="./src/style/main.css" />
     <link rel="stylesheet" href="./src/style/footer.css" />
     <link rel="stylesheet" href="./src/style/keyframes.css" />
     <link rel="stylesheet" href="./src/style/style.css" />
-    <link rel="stylesheet" href="./src/style/ads_content.css" />
-    <link rel="stylesheet" href="./src/style/eventos_section.css" />
     <link rel="stylesheet" href="./src/style/reset.css" />
     <link rel="stylesheet" href="./src/style/slider.css" />
-    <link rel="stylesheet" href="./src/style/sections.css" />
     <link rel="stylesheet" href="./src/style/vars.css" />
     <link rel="stylesheet" href="./src/style/dropdown_mobile.css" />
     <link rel="stylesheet" href="./src/style/header.css" />
@@ -54,35 +47,36 @@
     <div id="header"></div>
     <!--  -->
     <div class="videos-content">
-      <span><i class="fa fa-play"></i>vídeos</span>
-      <div class="videos_content">
-        <div id="videos__content">
-          <p>CONTEÚDO AINDA NÃO DISPONÍVEL</p>
+      <span class="border"><i class="fa fa-play"></i>vídeos</span>
+      <div class="videos-content__content">
+        <div class="videos-content__content--desenhos">
+          <div
+            style="border-bottom: 1.5px solid gray; padding-bottom: 20px"
+            class="desenhos_content"
+          >
+            <span id="span_sections"
+              ><i class="fa-solid fa-book-bible"></i>desenhos</span
+            >
+            <div id="video">
+              <span>conteúdo ainda não disponível</span>
+            </div>
+          </div>
         </div>
-        <div id="videos__content">
-          <p>CONTEÚDO AINDA NÃO DISPONÍVEL</p>
+        <div class="videos-content__content--pregacoes">
+          <!--  -->
+          <div
+            style="border-bottom: 1.5px solid gray; padding-bottom: 20px"
+            class="pregacoes_content"
+          >
+            <span id="span_sections"
+              ><i class="fa-solid fa-film"></i>pregações</span
+            >
+            <div id="video">
+              <span>conteúdo ainda não disponível</span>
+            </div>
+          </div>
         </div>
-        <div id="videos__content">
-          <p>CONTEÚDO AINDA NÃO DISPONÍVEL</p>
-        </div>
-        <div id="videos__content">
-          <p>CONTEÚDO AINDA NÃO DISPONÍVEL</p>
-        </div>
-        <div id="videos__content">
-          <p>CONTEÚDO AINDA NÃO DISPONÍVEL</p>
-        </div>
-        <div id="videos__content">
-          <p>CONTEÚDO AINDA NÃO DISPONÍVEL</p>
-        </div>
-        <div id="videos__content">
-          <p>CONTEÚDO AINDA NÃO DISPONÍVEL</p>
-        </div>
-        <div id="videos__content">
-          <p>CONTEÚDO AINDA NÃO DISPONÍVEL</p>
-        </div>
-        <div id="videos__content">
-          <p>CONTEÚDO AINDA NÃO DISPONÍVEL</p>
-        </div>
+        <!--  -->
       </div>
     </div>
     <script>
