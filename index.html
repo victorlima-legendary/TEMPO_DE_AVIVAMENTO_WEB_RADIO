@@ -279,9 +279,6 @@
       </div>
     </div>
     <!-- ======================================== -->
-    <script>
-      document.getElementById("year").textContent = new Date().getFullYear();
-    </script>
     <script type="module">
       import { getGithubToken } from "./src/js/limao.js";
 
@@ -381,6 +378,11 @@
         .then((response) => response.text())
         .then((data) => {
           document.getElementById("footer").innerHTML = data;
+
+          const yearElement = document.getElementById("year");
+          if (yearElement) {
+            yearElement.textContent = new Date().getFullYear();
+          }
         });
     </script>
   </body>
