@@ -8,7 +8,7 @@
   height: 100%;
   background: #1b1b1b;
   overflow: hidden;
-  box-shadow: 0 0 20px 0 black;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.806);
   margin-bottom: 20px;
   padding-bottom: 20px;
 }
